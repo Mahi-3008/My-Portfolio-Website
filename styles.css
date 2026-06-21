@@ -52,5 +52,23 @@ nav {
 #details ul a:hover {
   color: rgb(198, 169, 222);
   cursor: pointer;
-  border-bottom: 1px dotted rgb(198, 169, 222);
+}
+
+#menu-bar {
+  display: none;
+}
+
+@media (max-width: 620px) {
+  #details ul {
+    display: none;
+  }
+
+  #menu-bar {
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
 }
